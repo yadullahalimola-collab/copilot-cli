@@ -1,3 +1,12 @@
+## 1.0.19 - 2026-04-06
+
+- /mcp enable and /mcp disable now persist across sessions
+- OpenTelemetry monitoring: subagent spans now use INTERNAL span kind, and chat spans include a `github.copilot.time_to_first_chunk` attribute (streaming only)
+- Plugin hook scripts with missing execute permissions now run correctly on macOS
+- Custom agent is properly restored when resuming a session where the agent display name differs from its filename
+- Skip IDE auto-connect when session is already in use by another client
+- Slash command timeline entries now include the command name (e.g., "Review", "Plan") for better context
+
 ## 1.0.18 - 2026-04-04
 
 - New Critic agent automatically reviews plans and complex implementations using a complementary model to catch errors early (available in experimental mode for Claude models)
